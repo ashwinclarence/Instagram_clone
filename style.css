@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+/* left box */
+
+.left-box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.left-box-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100vh;
+}
+
+.left-box-top .logo-main {
+    width: 120px;
+}
+
+.left-box-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-box-middle-inner {
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.left-box-middle-inner:hover {
+    background-color: #e4e4e4;
+}
+
+.navbar-title {
+    font-size: 20px;
+}
+
+.left-box-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* duplicate row */
+.duplicate-box-container {
+    width: 20%;
+}
+
+
+/* middle box */
+.middle-box-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.middle-box-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.status-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-status-container {
+    text-align: center;
+    cursor: pointer;
+}
+
+.status-image-container {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffff00, #fe04fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.user-image-status {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.status-username h6 {
+    padding-top: 5px;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+.post-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-post-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-details-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.profile-picture-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffff00, #fe04fe);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-picture-image {
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.profile-username-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-username-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-username-description {
+    font-size: 12px;
+}
+
+.middle-post-box {
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.middle-post-box img {
+    width: 100%;
+}
+
+.bottom-post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.bottom-post-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bottom-post-like-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.like-action {
+    font-size: 25px;
+    transition: .3s ease-in-out;
+}
+
+.like-action:hover {
+    color: #aaaaaa;
+}
+
+.bottom-post-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.bottom-post-description h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bottom-post-description h6 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.font-gray {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.fa-face-smile {
+    font-size: 12px;
+    color: #aaaaaa;
+    transition: .3s ease-in-out;
+}
+
+.fa-face-smile:hover {
+    color: #dcdcdc;
+}
+
+/* all caught up message */
+.post-end-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.all-up-caught{
+   font-size: 50px;
+   color: purple;
+}
+.middle-end-post-box{
+    text-align: center;
+}
+.middle-end-post-box h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+.middle-end-post-box h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #959595;
+}
+
+
+
+
+
+/* right box */
+.right-box-container {
+    width: 30%;
+    overflow: hidden;
+}
+
+.right-box-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-box-user-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+
+.user-container-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right-user-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ffff00, #fe04fe);
+}
+
+.right-user-image img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+
+}
+
+.right-user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-user-name span {
+    font-size: 12px;
+}
+
+#username-right {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.right-profile-action {
+    font-size: 12px;
+    color: blue;
+    cursor: pointer;
+}
+
+.footer-right-box h6 {
+    font-size: 12px;
+    color: #aaaaaa;
+    text-align: center;
+}
