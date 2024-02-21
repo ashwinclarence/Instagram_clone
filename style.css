@@ -12,6 +12,7 @@ body {
     justify-content: center;
     font-family: "Montserrat", sans-serif;
     padding: 20px;
+  
 }
 
 /* left box */
@@ -146,10 +147,12 @@ body {
 
 /* mobile bottom navbar */
 .nav-mobile-bottom-container {
+    display: none;
     background-color: #ffffff;
     position: fixed;
     bottom: 0;
     left: 0;
+    text-align: center;
 }
 
 .nav-mobile-bottom-box i {
@@ -544,6 +547,10 @@ body {
     .nav-mobile-top-container {
         display: block;
     }
+
+    .nav-mobile-bottom-container {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -565,6 +572,7 @@ body {
         border-radius: 0;
         overflow: hidden;
     }
+
     .middle-post-box img {
         width: 100%;
         height: 100%;
