@@ -8,3 +8,7 @@ function ShowMoreNav(){
         document.getElementById("show-more-button").style.backgroundColor="#ffffff";
     }
 }
+document.getElementById("show-more-post-description").addEventListener("click",function(){
+    document.getElementById("remaining-description-text").style.display="block";
+    document.getElementById("show-more-post-description").style.display="none";
+})

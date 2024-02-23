@@ -372,6 +372,15 @@ body {
     text-align: justify;
 }
 
+#show-more-post-description {
+    cursor: pointer;
+}
+
+#remaining-description-text {
+    display: none;
+    transition: .3s ease-in-out;
+}
+
 .font-gray {
     color: #aaaaaa;
     font-size: 12px;
