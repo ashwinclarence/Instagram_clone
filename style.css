@@ -76,6 +76,29 @@ body {
     transition: .3s ease-in-out;
 }
 
+/* more option */
+
+.more-option-container {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    background-color: rgb(249, 249, 249);
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #000000;
+}
+
+.more-row {
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    font-size: 16px;
+}
+
+.more-row:hover {
+    background-color: #e4e4e4;
+}
+
 
 
 /* mobile top navbar */
@@ -459,6 +482,8 @@ body {
 .follow-button:hover {
     color: rgb(0, 0, 102);
 }
+
+
 
 /* responsive */
 
