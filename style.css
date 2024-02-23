@@ -12,7 +12,7 @@ body {
     justify-content: center;
     font-family: "Montserrat", sans-serif;
     padding: 20px;
-  
+
 }
 
 /* left box */
@@ -29,31 +29,13 @@ body {
 }
 
 .left-box-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
     height: 100vh;
-}
-
-.left-box-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    padding-left: 10px;
 }
 
 .logo-main {
     display: block;
     width: 120px;
-}
-
-.left-box-middle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
 }
 
 .navbar-icon {
@@ -95,11 +77,6 @@ body {
 }
 
 
-.left-box-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 /* mobile top navbar */
 .nav-mobile-top-container {
@@ -330,6 +307,13 @@ body {
     border-bottom: 1px solid #aaaaaa;
 }
 
+.bottom-post-comment input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 95%;
+}
+
 .bottom-post-description h5 {
     font-size: 14px;
     font-weight: 700;
@@ -553,13 +537,15 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .post-box {
+        padding: 10px 0;
+    }
+}
+
 @media only screen and (max-width: 460px) {
     .nav-top-right-search-box-inner {
         width: 250px;
-    }
-
-    .post-box {
-        padding: 10px 0;
     }
 
     .bottom-post-comment {
