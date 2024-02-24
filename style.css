@@ -372,6 +372,7 @@ body {
     text-align: justify;
 }
 
+#show-less-post-description,
 #show-more-post-description {
     cursor: pointer;
 }

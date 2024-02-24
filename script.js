@@ -12,3 +12,7 @@ document.getElementById("show-more-post-description").addEventListener("click",f
     document.getElementById("remaining-description-text").style.display="block";
     document.getElementById("show-more-post-description").style.display="none";
 })
+document.getElementById("show-less-post-description").addEventListener("click",function(){
+    document.getElementById("remaining-description-text").style.display="none";
+    document.getElementById("show-more-post-description").style.display="block";
+})
